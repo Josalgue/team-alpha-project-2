@@ -4,9 +4,24 @@ from sqlalchemy import create_engine
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+@app.route("/api_countries")
+def api_countries():
+    connection_string = "postgres://postgres:ABC@123@localhost/spotify"
+    conn = create_engine(connection_string)
+    data = pd.read_sql("select * from by_decade",conn)
+return data.to_json(orient="records")
+
+@app.route("/json_gauges")
+def api():
+    decades_df = pd.read_csv("Datasets/decades.csv")
+    return(decades_df
+        .groupby(['decade']).mean()
+        .rename(columns={'nrgy': 'energy', 'dnce': 'danceability','val':'valence','pop':'popularity'})
+        .round(0)
+        .reset_index()
+        .loc[:,["decade","danceability","energy","valence","popularity"]]
+        .to_json(orient='records')
+    )
 
 
 if __name__=="__main__":
