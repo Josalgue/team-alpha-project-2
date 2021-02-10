@@ -8,10 +8,10 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="static/css/styles.css">
 
             <!-- Load c3.css -->
-    <link href="assets/css/c3.css" rel="stylesheet">
+    <link href="static/css/c3.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -35,7 +35,7 @@
             </div>
 
             <div class="header__img">
-                <img src="assets/img/dragons.png" alt="">
+                <img src="static/img/alpha.png" alt="">
             </div>
         </header>
 
@@ -47,23 +47,23 @@
                         <span class="nav__logo-name">Alpha Team</span>
                     </a>
 
-                    <div class="nav__list">
-                        <a href="index.html" class="nav__link">
+                    <div href="/" class="nav__list">
+                        <a href="#" class="nav__link active">
                         <i class='bx bxs-dashboard nav__icon' ></i>
                             <span class="nav__name">Start</span>
                         </a>
 
-                        <a href="byCountry.html" class="nav__link active ">
+                        <a href="/byCountry" class="nav__link ">
                             <i class='bx bx-map nav__icon' ></i>
                             <span class="nav__name">By Country</span>
                         </a>
 
-                        <a href="byGenre.html" class="nav__link ">
+                        <a href="/byGenre" class="nav__link">
                             <i class='bx bx-music nav__icon' ></i>
                             <span class="nav__name">By Genre</span>
                         </a>
                         
-                        <a href="datasets.html" class="nav__link">
+                        <a href="/datasets" class="nav__link active">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
                             <span class="nav__name">Datasets</span>
                         </a>
@@ -72,7 +72,6 @@
                             <i class='bx bx-bookmark nav__icon' ></i>
                             <span class="nav__name">Repository</span>
                         </a>
-
                     </div>
                 </div>
 
@@ -90,62 +89,17 @@
                     <div class="card-body">
                       <h5 >Card title</h5>
         
-        <h1 class="card-title" style="padding-top: 20px">Benchmark by Country</h1>
+        <h1 class="card-title" style="padding-top: 20px">Project Description</h1>
             <br>
-        <select name="kind_of_chart" id="" class="select_chart">
-            <option value="cons" selected>Consumption Chart</option>
-            <option value="prod">Production Chart</option>
-        </select>
-        <br>
-        <br>
-        <select name="type_of_feature" id="" class="select_feature">
-            <option value="danceability" selected>Danceability</option>
-            <option value="energy">Energy</option>
-            <option value="valence">Valence</option>
-        </select>
-        <div id="bar_chart"></div>
+        
                     </div>
                    </div>
             </div>
 
-            <div class="content">
-                <div class="container-fluid">
-        <div class="row">
-            <div class="col-xm-8">
-                <div class="card" style="padding-left: 50px; padding-top: 70px; padding-right: 50px;" >
-                    <div class="card-body">
-        <div class="row">
-              <div class="title" style="margin: auto">
-                <h5 >AVG Properties per Decade</h5>
-                <div class="container-fluid" style="padding-left: 90px; padding-top: 20px;" id="select_container">
-                <select id="selDataset" >
-                  <option value="1950">1950</option>
-                  <option value="1960">1960</option>
-                  <option value="1970">1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1990">1990</option>
-                  <option value="2000">2000</option>
-                  <option value="2010">2010</option>
-                </select>
-                </div>
-              </div>
-             
-        </div>
-
-        <div id="chart"  ></div>
-        <div id="chart1" ></div>
-        <div id="chart2" ></div>
-        <div id="chart3" ></div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="static/js/main.js"></script>
 
 
         <!-- Chart scripts -->
@@ -155,8 +109,8 @@
 
         <!-- Load d3.js and c3.js -->
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="static/js/c3.min.js"></script>
-        <script src="static/js/config.js"></script>
+        <script src="/static/js/c3.min.js"></script>
+        <script src="/static/js/config.js"></script>
 
         <script src="static/js/app.js"></script>
         <script src="static/data/countries_comparison.json"></script>

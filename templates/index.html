@@ -8,27 +8,21 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="static/css/styles.css">
 
             <!-- Load c3.css -->
-    <link href="assets/css/c3.css" rel="stylesheet">
+    
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
 
-    <!-- ESTAS SON LAS LIBRERÍAS NECESARIAS: -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+            <!-- THESE ARE THE LIBRARIES NEEDED -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-color.v2.min.js"></script>
     <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
-
-    
 
         
 
@@ -41,7 +35,7 @@
             </div>
 
             <div class="header__img">
-                <img src="assets/img/alpha.png" alt="">
+                <img src="static/img/alpha.png" alt="">
             </div>
         </header>
 
@@ -54,22 +48,22 @@
                     </a>
 
                     <div class="nav__list">
-                        <a href="index.html" class="nav__link">
+                        <a href="/" class="nav__link active">
                         <i class='bx bxs-dashboard nav__icon' ></i>
                             <span class="nav__name">Start</span>
                         </a>
 
-                        <a href="byCountry.html" class="nav__link ">
+                        <a href="/byCountry" class="nav__link ">
                             <i class='bx bx-map nav__icon' ></i>
                             <span class="nav__name">By Country</span>
                         </a>
 
-                        <a href="byGenre.html" class="nav__link active">
+                        <a href="/byGenre" class="nav__link">
                             <i class='bx bx-music nav__icon' ></i>
                             <span class="nav__name">By Genre</span>
                         </a>
                         
-                        <a href="datasets.html" class="nav__link">
+                        <a href="/datasets" class="nav__link">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
                             <span class="nav__name">Datasets</span>
                         </a>
@@ -78,10 +72,8 @@
                             <i class='bx bx-bookmark nav__icon' ></i>
                             <span class="nav__name">Repository</span>
                         </a>
-
                     </div>
                 </div>
-
             </nav>
 
 </div>   
@@ -92,35 +84,36 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xm-4">
-                  <div class="card" style="padding-left: 0px; padding-top: 50px; ">
-                    <div class="card-body">
-        
-            <br>
-            <!-- ESTO ES EL CÓDIGO NECESARIO EN EL HTML: -->
-    <h2>Top Genres according to their Popularity:</h2>
-    <div id="chart" style="padding-left: 0px;"></div>
-    <h3 class="title_radar text-center"  >Genre:</h3>
-    <div class="radarChart"></div> 
-
-            <div class="content">
-                <div class="container-fluid">
-        <div class="row">
-            <div class="col-xm-8">
-                <div class="card" >
+                  <div class="card" style="padding-left: 5px;">
                     <div class="card-body">
                       <h5 >Card title</h5>
+        
+        <h1 class="card-title" style="padding-top: 20px">Project Description</h1>
+            <br>
+        
+                    </div>
+                   </div>
+            </div>
 
 
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="static/js/main.js"></script>
 
 
-    <!-- ESTOS SON LOS SCRIPTS Y FILES NECESARIOS PARA QUE CORRA: -->
-    <script src="static/data/popularity.json"></script>
-    <script src="static/data/data_radar_chart.js"></script>
-    <script src="static/js/hexagon_radar_chart.js"></script> 
+        <!-- Chart scripts -->
+    
+    <script src="static/js/app.js"></script>
+    <script src="static/data/countries_comparison.json"></script>
 
+        <!-- Load d3.js and c3.js -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="static/js/c3.min.js"></script>
+        <link href="static/css/c3.css" rel="stylesheet">
+        <script src="static/js/config.js"></script>
+
+        <script src="static/js/app.js"></script>
+        <script src="static/data/countries_comparison.json"></script>
 
 
     </body>
