@@ -21,7 +21,7 @@ function init() {
         bindto: '#chart',
         data: {
             columns: [
-                ['Danceability', 0]
+                ['Danceability', 55]
             ],
             type: 'gauge',
         
@@ -35,10 +35,11 @@ function init() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
-            pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+            pattern: ['#5c5b5b00'], // the three color levels for the percentage values.
             threshold: {
             unit: 'value', // percentage is default
             max: 200, // 100 is default
@@ -55,7 +56,7 @@ function init() {
         bindto: '#chart1',
         data: {
             columns: [
-                ['Energy', 0]
+                ['Energy', 55]
             ],
             type: 'gauge',
             
@@ -69,10 +70,11 @@ function init() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
-            pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+            pattern: ['#5c5b5b00'], // the three color levels for the percentage values.
             threshold: {
             unit: 'value', // percentage is default
             max: 200, // 100 is default
@@ -89,7 +91,7 @@ function init() {
         bindto: '#chart2',
         data: {
             columns: [
-                ['Valence', 0]
+                ['Valence', 55]
             ],
             type: 'gauge',
             
@@ -103,10 +105,11 @@ function init() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
-            pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+            pattern: ['#5c5b5b00'], // the three color levels for the percentage values.
             threshold: {
             unit: 'value', // percentage is default
             max: 200, // 100 is default
@@ -123,7 +126,7 @@ function init() {
         bindto: '#chart3',
         data: {
             columns: [
-                ['Popularity', 0]
+                ['Popularity', 55]
             ],
             type: 'gauge',
             
@@ -137,10 +140,11 @@ function init() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
-            pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'], // the three color levels for the percentage values.
+            pattern: ['#5c5b5b00'], // the three color levels for the percentage values.
             threshold: {
             unit: 'value', // percentage is default
             max: 200, // 100 is default
@@ -238,6 +242,7 @@ function updatePlot() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
@@ -272,6 +277,7 @@ function updatePlot() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
@@ -306,6 +312,7 @@ function updatePlot() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
@@ -340,6 +347,7 @@ function updatePlot() {
         },
     min: 30, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
     max: 80, // 100 is default
+    units: ' %',
     width: 50 // for adjusting arc thickness
         },
         color: {
