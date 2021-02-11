@@ -1,4 +1,3 @@
-console.log("hola");
 
 let jsondata = d3.json("/json_gauges")
 // let jsondata = d3.json("decades.json")
