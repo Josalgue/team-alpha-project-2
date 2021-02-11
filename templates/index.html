@@ -83,46 +83,75 @@
 <div class="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xm-4">
+            <div class="col-sm-8">
                   <div class="card" style="padding-left: 5px;">
                     <div class="card-body">
         
-        <h1 class="card-title" style="padding-top: 100px">Alpha Team's project 2: Musical Hit Finder</h1>
-            <p class="p">This dashboard compares the properties of music, according to Spotify's classification of four features: Valence, Energy, Danceability and Popularity.</p>
-            <p class= "p1">In By Country, you will find a chart with a benchmark of Produced vs Consumed music features in 8 countries from various continents.</p>
-            <p class= "p2">By Genre displays a hexbin selection pannel that will let you choose between genres to check their features in a radar chart.</p>
-            <p class= "p3">Please take a look at the Git repo to check the details on data sources.</p>
+        <h1 class="card-title text-center" style="padding-top: 65px" >Musical Hit Finder</h1>
+        <img src="/static/img/alpha-icon.png" alt="" class="center" style="display: block;margin-left: auto;margin-right: auto;width: 3%;">
+        <h4 class="card-title text-center" style="padding-top: 10px; opacity: 0.5;" >Team Alpha 2nd project</h4>
+        <br>
+            <p class="p" style="font-size:150%">This dashboard serves music business purposes by displaying the main features of popular music, according to Spotify's taxonomy.</p>
+            <p class="p1 text-center" style="font-size:150%">This study focuses on:</p>
+            <li style="font-size:105%">A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</li>
             <br>
-            <div class="text-md-center" style="padding-right: 100px;">
-            <h5>Alpha Team is integrated by:</h5>
-            <p class="p">Harpreet Kaur</p>       
-            <p class="p2">Jesús Daniel Sánchez</p>          
-            <p class="p3">Alfonso Covarrubias</p>  
-            <p class="p4">Jonathan Salguero</p>                           
-            </div>    
+            <li style="font-size:105%">Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</li>
+            <br>
+            <li style="font-size:105%">Energy represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy.</li>
+            
+            <p class= "p2" style="font-size:150%">In By Country, you will find a chart with a benchmark of Produced vs Consumed music features in 8 countries from various continents.</p>
+            <p class= "p3" style="font-size:150%">By Genre displays a hexbin selection pannel that will let you choose between genres to check their features in a radar chart.</p>
+            <p class= "p4" style="font-size:150%">Please take a look at the Git repo to check the details on data sources.</p>
+            <br>
         </div>
+    </div>
+</div>
+
+
+
                     
-                   </div>
-                   
-            </div>
-            <div class="col-md-3">
+
+            <div class="col-sm-3" style="padding-left: 20px;">
+                <div class="container-fluid">
                 <div class="panel panel-default" >
-                        <div class="panel-body">                                    
-                            <h2 class="text-md-center" >Visualizations</h2>
+                        <div class="panel-body-center">                                    
+                            <h2 class="text-md-center" style="padding-top: 70px;" >Charts</h2>
                             <hr>
-  
+                            <h7 class="card-title text-center">By Country comparison of Produced and Consumed music.</h7>
+                            <br>
+                            <br>
                             <div class="row" >
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="Resources/Fig1.png" style="width:100%" alt=""></a></div>
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Resources/Fig3.png" style="width:100%" alt=""></a></div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="byCountry.html"><img class = "img img-responsive center" src="/static/img/feat-compare.JPG" style="width:160%" alt=""></a></div>
                           </div>
+                          <br>
+                          <br>
+                          <h7 class="card-title text-center">By Decade corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <br>
                           <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="Resources/Fig2.png" style="width:100%" alt=""></a></div>
-                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="windspeed.html"><img class = "img img-responsive" src="Resources/Fig4.png" style="width:100%" alt=""></a></div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="byCountry.html"><img class = "img img-responsive center" src="/static/img/gauges.JPG" style="width:160%" alt=""></a></div>
                           </div>
+                          <br>
+                          <br>
+                          <h7 class="card-title text-center">By Genre corelation of Valence, Danceability, Energy and Popularity.</h7>
+                          <br>
+                          <br>
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="byGenre.html"><img class = "img img-responsive-center" src="/static/img/hex.JPG" style="width:160%" alt=""></a></div>
+                        </div>
                         </div>
                 </div>     
             </div> 
-        </div>     
+            </div> 
+        </div>
+    </div>
+</div>
+
+            <div class="text-md-center">
+                <h5>Team Alpha is:</h5>
+                <p class="p" style="font-size:110%">Harpreet Kaur  |  Jesús Daniel Sánchez  |  Alfonso Covarrubias  |  Jonathan Salguero</p>                           
+                </div>    
+     
     </div>    
 
 
