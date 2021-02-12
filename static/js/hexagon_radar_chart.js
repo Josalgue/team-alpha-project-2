@@ -570,9 +570,9 @@ function RadarChart(id, data, options) {
 
 let radar_data = [data_rc[0]]
 
-var margin = {top: 100, right: 100, bottom: 100, left: 100},
-width = window.innerWidth/1.3,
-height = window.innerHeight/3;
+var margin = {top: margin.top, right: margin.right, bottom: margin.bottom, left: margin.left},
+width = width;
+height = height;
 
  
 var radarChartOptions = {
@@ -592,3 +592,4 @@ RadarChart(".radarChart", radar_data, radarChartOptions)
     d3.select(window).on("resize", makeResponsive);
 
     makeResponsive()
+

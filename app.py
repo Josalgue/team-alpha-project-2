@@ -17,9 +17,9 @@ def byCountry():
 def byGenre():
     return render_template("byGenre.html")
 
-@app.route("/datasets")
+@app.route("/byDecade")
 def datasets():
-    return render_template("datasets.html")
+    return render_template("byDecade.html")
 
 
 @app.route("/api_countries")
