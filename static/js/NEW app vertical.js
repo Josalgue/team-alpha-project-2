@@ -16,15 +16,15 @@ let svgHeight = 0;
 let svgWidth = 0;
 
 if (window.innerWidth > 1500){
-    svgWidth = 1500
+  svgWidth = 1500
 }else{
-    svgWidth = window.innerWidth;
+  svgWidth = window.innerWidth;
 }
 
 if (window.innerHeight < 500){
-    svgHeight/3;
+  svgHeight = window.innerHeight/2;
 }else{
-    svgHeight = 400;
+  svgHeight = 400;
 }
 
 //SVG sizes and margins
@@ -259,10 +259,10 @@ d3.select(".select_feature").on("change",function(){
   bar_chart(kind_of_chart, type_of_feature)
   })
 
-function makeResponsive() {
-  bar_chart(kind_of_chart, type_of_feature)
-}
+// function makeResponsive() {
+//   bar_chart(kind_of_chart, type_of_feature)
+// }
 
 
-d3.select(window).on("resize", makeResponsive);
+// d3.select(window).on("resize", makeResponsive);
     
