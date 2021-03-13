@@ -16,6 +16,7 @@ let svgHeight = 0;
 let svgWidth = 0;
 
 if (window.innerWidth > 1500){
+<<<<<<< HEAD
   svgWidth = 1500
 }else{
   svgWidth = window.innerWidth;
@@ -25,6 +26,17 @@ if (window.innerHeight < 500){
   svgHeight = window.innerHeight/2;
 }else{
   svgHeight = 400;
+=======
+    svgWidth = 1500
+}else{
+    svgWidth = window.innerWidth;
+}
+
+if (window.innerHeight < 500){
+    svgHeight/3;
+}else{
+    svgHeight = 400;
+>>>>>>> f15123b2121d3c48f68ec1ca847e8317b454bd08
 }
 
 //SVG sizes and margins
@@ -39,7 +51,11 @@ let margin = {
 let width = svgWidth - margin.left - margin.right;
 let height = svgHeight - margin.top - margin.bottom;
 
+<<<<<<< HEAD
 // console.log(height*1.4)
+=======
+console.log(height*1.4)
+>>>>>>> f15123b2121d3c48f68ec1ca847e8317b454bd08
 
 
 
@@ -189,6 +205,7 @@ let tooltip =  d3.select("#bar_chart")
     button_comparison.on('click', function(d) {
       
       d3.select(".study_title").text("");
+<<<<<<< HEAD
       d3.selectAll(svg).remove()
 
       d3.select(".comparison_title").text(`Feature compared: "${capitalized_type_of_feature}"`)
@@ -198,6 +215,16 @@ let tooltip =  d3.select("#bar_chart")
         
     // }
 
+=======
+      d3.select(".comparison_title").text(`Feature compared: "${capitalized_type_of_feature}"`)
+
+      d3.selectAll(svg).remove()
+
+      if (!svgArea.empty()) {
+        svgArea.remove();
+        
+    }
+>>>>>>> f15123b2121d3c48f68ec1ca847e8317b454bd08
       var trace2 = {
         x: list_of_countries,
         y: y_production,
@@ -259,10 +286,19 @@ d3.select(".select_feature").on("change",function(){
   bar_chart(kind_of_chart, type_of_feature)
   })
 
+<<<<<<< HEAD
 // function makeResponsive() {
 //   bar_chart(kind_of_chart, type_of_feature)
 // }
 
 
 // d3.select(window).on("resize", makeResponsive);
+=======
+function makeResponsive() {
+  bar_chart(kind_of_chart, type_of_feature)
+}
+
+
+d3.select(window).on("resize", makeResponsive);
+>>>>>>> f15123b2121d3c48f68ec1ca847e8317b454bd08
     

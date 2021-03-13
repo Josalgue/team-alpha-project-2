@@ -364,4 +364,3 @@ function updatePlot() {
 }
 
 init();
-
